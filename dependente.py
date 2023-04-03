@@ -5,4 +5,4 @@ class Dependente(Pessoa):
         super().__init__(nome, cpf)
 
     def __str__(self):
-        return '\nNome: {}\nCPF:{}'.format(self.)
+        return '\nNome: {}\nCPF:{}'.format(self.nome, self.cpf)

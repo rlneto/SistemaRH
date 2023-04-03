@@ -5,4 +5,7 @@ class Pessoa:
 
     @property
     def nome(self):
-        retur
+        return self.__nome
+    @property
+    def cpf(self):
+        return self.__cpf

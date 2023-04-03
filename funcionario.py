@@ -11,13 +11,17 @@ class Funcionario:
 
     def rem_dependentes(self, cpf):
         for dependente in self.__dependentes:
-            if dependente.__cpf == cpf:
+            if dependente.cpf == cpf:
                 self.__dependentes.discard(dependente)
                 break
 
     @property
     def cargo(self):
         return self.__cargo.descricao
+
+    @property
+    def dependentes(self):
+        return self.__dependentes
     def __str__(self):
         return 'Salário: {}\nDescrição: {}\nDependentes:{}'.format(self.__cargo.salario, self.__cargo.descricao,
                                                                    self.__dependentes)
