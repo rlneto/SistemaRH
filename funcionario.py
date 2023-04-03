@@ -1,9 +1,6 @@
 from cargo import Cargo
-from pessoa import Pessoa
+from dependente import Dependente
 
-class Dependente(Pessoa):
-    def __init__(self, nome: str, cpf: str):
-        super().__init__(nome, cpf)
 class Funcionario:
     def __init__(self, cargo: Cargo):
         self.__cargo = cargo
