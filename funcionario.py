@@ -14,6 +14,7 @@ class Funcionario(Pessoa):
     def rem_dependentes(self, cpf):
         for dependente in self.__dependentes:
             if dependente.cpf == cpf:
+                print("\nRemovendo {}...\n".format(dependente.nome))
                 self.__dependentes.discard(dependente)
                 break
 
