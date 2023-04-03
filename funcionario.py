@@ -1,8 +1,10 @@
 from cargo import Cargo
 from dependente import Dependente
+from pessoa import Pessoa
 
-class Funcionario:
-    def __init__(self, cargo: Cargo):
+class Funcionario(Pessoa):
+    def __init__(self, nome: str, cpf: str, cargo: Cargo):
+        super().__init__(nome, cpf)
         self.__cargo = cargo
         self.__dependentes = set()
 
