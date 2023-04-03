@@ -16,6 +16,8 @@ class Funcionario(Pessoa):
             if dependente.cpf == cpf:
                 print("\nRemovendo {}...\n".format(dependente.nome))
                 self.__dependentes.discard(dependente)
+                dependente = None
+                print(dependente)
                 break
 
     @property
