@@ -11,3 +11,7 @@ class Pessoa(ABC):
     @property
     def cpf(self):
         return self.__cpf
+
+    @abstractmethod
+    def identificador(self):
+        pass

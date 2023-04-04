@@ -14,7 +14,7 @@ if __name__ == '__main__':
     joao.rem_dependentes("0123")
     for dependente in joao.dependentes:
         print(dependente)
-
+    joao.identificador()
 
     # cargo2 = Cargo(int(input("Informe o salário:")), str(input("Informe a descrição")))
     #

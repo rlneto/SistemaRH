@@ -30,5 +30,7 @@ class Funcionario(Pessoa):
     def __str__(self):
         return 'Salário: {}\nDescrição: {}\nDependentes:{}'.format(self.__cargo.salario, self.__cargo.descricao,
                                                                    self.__dependentes)
+    def identificador(self):
+        return self.cpf
 
 

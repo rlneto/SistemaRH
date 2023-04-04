@@ -13,3 +13,6 @@ class Cliente(Pessoa):
     @codigo.setter
     def codigo(self, codigo: int):
         self.__codigo = codigo
+
+    def identificador(self):
+        return self.codigo
